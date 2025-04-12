@@ -10,7 +10,7 @@ class HomeScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: const Text('NeoTrack - Home')),
+      appBar: AppBar(title: const Text('NeoTrack - Accueil')), // Translated
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
@@ -21,8 +21,11 @@ class HomeScreen extends StatelessWidget {
             // Scan QR Code Button
             ElevatedButton.icon(
               icon: const Icon(Icons.qr_code),
-              label: const Text('Scan QR Code'),
-              style: ElevatedButton.styleFrom(padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 15)),
+              label: const Text('Scanner QR Code'), // Translated
+              style: ElevatedButton.styleFrom(
+                padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 15),
+                backgroundColor: const Color(0xFFFCC236), // Your chart color
+              ),
               onPressed: () {
                 Navigator.push(
                   context,
@@ -35,12 +38,15 @@ class HomeScreen extends StatelessWidget {
             // Track GPS Button
             ElevatedButton.icon(
               icon: const Icon(Icons.location_on),
-              label: const Text('Track Shipment'),
-              style: ElevatedButton.styleFrom(padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 15)),
+              label: const Text('Suivre l\'expédition'), // Translated
+              style: ElevatedButton.styleFrom(
+                padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 15),
+                backgroundColor: const Color(0xFFFCC236), // Your chart color
+              ),
               onPressed: () {
                 Navigator.push(
                   context,
-                  MaterialPageRoute(builder: (context) => const TrackingPage(transporterId: "1")), // Example ID
+                  MaterialPageRoute(builder: (context) => const TrackingPage(transporterId: "1")),
                 );
               },
             ),
@@ -49,8 +55,11 @@ class HomeScreen extends StatelessWidget {
             // View Notifications Button
             ElevatedButton.icon(
               icon: const Icon(Icons.notifications),
-              label: const Text('View Notifications'),
-              style: ElevatedButton.styleFrom(padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 15)),
+              label: const Text('Voir les notifications'), // Translated
+              style: ElevatedButton.styleFrom(
+                padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 15),
+                backgroundColor: const Color(0xFFFCC236), // Your chart color
+              ),
               onPressed: () {
                 Navigator.push(
                   context,
@@ -63,8 +72,11 @@ class HomeScreen extends StatelessWidget {
             // View History Button
             ElevatedButton.icon(
               icon: const Icon(Icons.history),
-              label: const Text('View Shipment History'),
-              style: ElevatedButton.styleFrom(padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 15)),
+              label: const Text('Historique des expéditions'), // Translated
+              style: ElevatedButton.styleFrom(
+                padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 15),
+                backgroundColor: const Color(0xFFFCC236), // Your chart color
+              ),
               onPressed: () {
                 Navigator.push(
                   context,

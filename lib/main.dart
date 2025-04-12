@@ -14,7 +14,7 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
         primarySwatch: Colors.deepPurple,
-        brightness: Brightness.dark,
+        brightness: Brightness.light, // Set to light mode
         useMaterial3: true,
       ),
       home: const LoginPage(), // Start with login
